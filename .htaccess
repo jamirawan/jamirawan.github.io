@@ -1,0 +1,9 @@
+
+
+#RewriteOptions inherit#
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?irawan\.io
+RewriteRule ^(.*)$ https://www.irawan.io/$1 [R,L]
+
