@@ -1,3 +1,0 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/bgdeutsch/pen/XKgyjq.
-
- In browsing some web developer personal sites, I've often seen sections listing skill levels in a kind of "graph" format.  I thought it'd be cool to take a stab at some fun animated bars for my own site.  This example uses HTML, SCSS, and jQuery to animate the bars, and also shows the ability to animate elements using both CSS and jQuery.  The bars are also responsive.  Cheers!
