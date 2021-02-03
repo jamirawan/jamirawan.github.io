@@ -2,6 +2,6 @@
 
 ##Here are my pages
 
-1. [Documentasi](https://jamirawan.github.io/docs/)
-2. [Blog] ( https://irawans.com)
+1. [Dokumentasi](https://jamirawan.github.io/docs/)
+2. [Blog]( https://irawans.com)
 
