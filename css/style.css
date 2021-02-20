@@ -614,7 +614,7 @@ $brand-color: #006FC2;
   background-color: transparent ;
 }
 .icon-link.brand .fa {
-  color: #006FC2;
+  color: #0c3835;
 }
 .icon-link.round {
   border-radius: 50%;
@@ -624,13 +624,10 @@ $brand-color: #006FC2;
 }
 .icon-link:hover {
   transition: background-color 150ms ease-in-out;
-  height: 56px;
-  line-height: 56px;
-  width: 56px;
-  background-color: #fff;
+  background-color: transparent;
 }
 .icon-link:hover.facebook {
-  border: 2px solid #3b5998;
+  border: 2px solid transparent;
 }
 .icon-link:hover.tumblr {
   border: 2px solid #32506d;
@@ -654,7 +651,7 @@ $brand-color: #006FC2;
   border: 2px solid #b81621;
 }
 .icon-link:hover.github {
-  border: 2px solid black;
+  border: 2px solid transparent;
 }
 .icon-link:hover.envelope {
   border: 2px solid #333;
@@ -712,7 +709,8 @@ $brand-color: #006FC2;
 .icon-link .fa {
   color: #fff;
   line-height: 60px;
-  font-size: 36px;
+  font-size: 50px;
+  padding:30px;
 }
 
 .brand-icons {

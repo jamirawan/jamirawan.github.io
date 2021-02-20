@@ -123,9 +123,11 @@
 }
 .icon-link.brand {
   background-color: #fff;
+  padding:30px;
 }
 .icon-link.brand .fa {
   color: #006FC2;
+  padding:30px;
 }
 .icon-link.round {
   border-radius: 50%;
@@ -141,7 +143,7 @@
   background-color: #fff;
 }
 .icon-link:hover.facebook {
-  border: 2px solid #3b5998;
+  border: none;
 }
 .icon-link:hover.tumblr {
   border: 2px solid #32506d;
