@@ -44,11 +44,11 @@ p {
 }
 
 a {
-	color: #353b48;
+	color: #7cf4ed;
 	text-decoration: underline;
 }
 a:hover{
-	color:black;
+	color:#d7ff16;
 }
 #title{
   text-align: center;
@@ -132,7 +132,7 @@ a:hover{
   text-align: center;
   z-index: 3;
   opacity: 0.95;	
-  
+
 }
 
 #menuContent ul, #menuContent a {
@@ -185,10 +185,9 @@ a:hover{
   top: 20px;
   right: 70px;
   color: white;
-  font-size:1em;
+  font-size:2em;
   transition:.2s ease-in-out;
   cursor: pointer;
-	color:black;
 	
 	
 }
@@ -228,6 +227,7 @@ a:hover{
   transition: 2s ease-in-out;
   border: 0 solid white;
   border-radius: 50%;
+  font-size:2rem;
 }
 
 #menu.menuTransition {

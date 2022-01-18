@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("#title").fadeOut(500);
     $("#triangle-down").delay(1500).fadeOut();
     $("#button").addClass("toMenu");
-    $("#button").text('+');
+    $("#button").text('☰');
     setTimeout(function() {
       $("#button").attr("id", "menu");
     }, 1);
@@ -16,7 +16,7 @@ $(document).ready(function() {
   $("#menuClose, #menuContent a").click(function() {
     $("#menu").removeClass("menuTransition");
     $("#menuContent").fadeOut(300);
-    $("#menu").text('+');
+    $("#menu").text('☰');
     $("#menu.toMenu").css('transition', '.5s ease-in-out');
   });
 
