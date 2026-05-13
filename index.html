@@ -4,56 +4,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamirawan GitHub</title>
+  <title>Jamirawan GitHub Pages</title>
   <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #008080;
+      color: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #008080;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      padding: 1.5rem;
+      background: radial-gradient(circle at top left, rgba(0, 230, 230, 0.18), transparent 35%),
+                  linear-gradient(180deg, #008080 0%, #005f5f 100%);
     }
 
     .container {
-      padding: 2rem;
-      max-width: 900px;
+      width: 100%;
+      max-width: 980px;
+      padding: 2rem 2rem 2.5rem;
+      border-radius: 28px;
+      background: rgba(0, 0, 0, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(16px);
+    }
+
+    header {
+      display: grid;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.84rem;
+      font-weight: 700;
     }
 
     h1 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      margin-bottom: 1rem;
-      font-weight: 900;
+      margin: 0;
+      font-size: clamp(2.4rem, 4.4vw, 4.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
     }
 
     p {
-      font-size: 1.25rem;
-      line-height: 1.7;
-      font-weight: 700;
       margin: 0 auto;
-      max-width: 700px;
+      max-width: 760px;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .links-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 120px;
+      padding: 1.4rem 1.5rem;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .card-title {
+      margin: 0 0 0.5rem;
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+
+    .card-subtitle {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to My GitHub Page</h1>
-    <p>Explore my projects, code experiments, and creative work in one place. This landing page is a simple introduction to the GitHub portfolio I build and share with the world.</p>
-    <section>
-      <h2>GitHub Pages Sites</h2>
-      <ul>
-        <li><a href="https://jamirawan.github.io">jamirawan.github.io</a></li>
-        <li><a href="https://iirawan.github.io">iirawan.github.io</a></li>
-        <li><a href="https://jamirawan.github.io/blog">blog</a></li>
-        <li><a href="https://jamirawan.github.io/dox">dox</a></li>
-        <li><a href="https://jamirawan.github.io/park-life">park-life</a></li>
-        <li><a href="https://jamirawan.github.io/reaksi">reaksi</a></li>
-        <li><a href="https://jamirawan.github.io/slides">slides</a></li>
-      </ul>
-    </section>
+    <header>
+      <div class="eyebrow">GitHub Pages Landing</div>
+      <h1>Welcome to my GitHub Pages hub</h1>
+      <p>Navigate to each of my published GitHub Pages sites from one clean landing page. The teal background stays intact, and each link is styled as a card for fast access.</p>
+    </header>
+
+    <main class="links-grid">
+      <a class="card" href="https://jamirawan.github.io" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">jamirawan.github.io</div>
+        <p class="card-subtitle">My main GitHub Pages portfolio and landing site.</p>
+      </a>
+      <a class="card" href="https://iirawan.github.io" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">iirawan.github.io</div>
+        <p class="card-subtitle">A secondary site with additional projects or experiments.</p>
+      </a>
+      <a class="card" href="https://jamirawan.github.io/blog" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">Blog</div>
+        <p class="card-subtitle">Read posts, notes, and ideas published on this GitHub Pages blog.</p>
+      </a>
+      <a class="card" href="https://jamirawan.github.io/dox" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">Dox</div>
+        <p class="card-subtitle">Documentation or notes site with useful references and guides.</p>
+      </a>
+      <a class="card" href="https://jamirawan.github.io/park-life" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">Park Life</div>
+        <p class="card-subtitle">A creative or experimental project showcasing interactive content.</p>
+      </a>
+      <a class="card" href="https://jamirawan.github.io/reaksi" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">Reaksi</div>
+        <p class="card-subtitle">A project, demo, or application page for Reaksi.</p>
+      </a>
+      <a class="card" href="https://jamirawan.github.io/slides" target="_blank" rel="noreferrer noopener">
+        <div class="card-title">Slides</div>
+        <p class="card-subtitle">Presentations, slide decks, or visual story content.</p>
+      </a>
+    </main>
+
+    <footer>Created for GitHub Pages — keep exploring the links above.</footer>
   </div>
 </body>
 </html>
